@@ -331,7 +331,7 @@ function renderResult(result) {
         ["No", "Nama Matkul", "Kode MK", "SKS", "Huruf Mutu"],
         result.lowGradeRows.map(r => [r.no, r.nama, r.kode, r.sks, `<span class="badge low">${r.hm}</span>`])
       )
-    : `<div class="empty-note">Tidak ada matkul dengan nilai C atau di bawahnya.</div>`;
+    : `<div class="empty-note">Tidak ada matkul dengan nilai D atau di bawahnya.</div>`;
 
   const p = result.peminatan;
   const peminatanNoteEl = document.getElementById("peminatanNote");
